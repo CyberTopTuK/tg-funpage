@@ -151,8 +151,11 @@ body {
 .about-info {
   background-color: #0a0a0a;
   margin-top: -10vh;
-  margin-bottom: 35vh;
+  margin-bottom: 10vh;
   padding-top: 16vh; }
+  @media screen and (max-width: 696px) {
+    .about-info {
+      margin-bottom: 35vh; } }
   .about-info__title {
     font-size: 3rem;
     font-weight: 500;
@@ -288,11 +291,14 @@ body {
 .persons {
   height: 900px;
   margin-top: 10rem;
-  padding-top: 20rem;
+  padding-top: 4rem;
   background-image: linear-gradient(rgba(8, 7, 7, 0.5) 30%, rgba(2, 27, 27, 0.52) 67%, rgba(36, 22, 22, 0.89)), url("../images/tg-persons-back.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
   transform: skewY(-7deg); }
+  @media screen and (max-width: 696px) {
+    .persons {
+      padding-top: 26rem; } }
   .persons > * {
     transform: skewY(7deg); }
