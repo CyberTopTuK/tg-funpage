@@ -225,3 +225,49 @@ body {
   @media screen and (max-width: 670px) {
     .xs6 {
       flex-basis: 100%; } }
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 0.3rem 0.9rem black;
+  color: black;
+  transition: all .2s; }
+  .card:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  .card__img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    max-height: 300px; }
+  .card__title {
+    font-size: 2.1rem;
+    margin-top: 10px; }
+  .card__table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%; }
+    .card__table tr {
+      background-color: rgba(255, 255, 255, 0.2);
+      text-align: left;
+      margin: 0 8px 14px 0; }
+      .card__table tr:nth-child(even) {
+        background-color: #f2f2f2; }
+      .card__table tr td {
+        width: 50%;
+        border: 1px solid #dad1d1;
+        vertical-align: middle;
+        padding: 8px; }
+
+.persons {
+  height: 900px;
+  margin-top: 10rem;
+  padding-top: 20rem;
+  background-image: linear-gradient(rgba(8, 7, 7, 0.5) 30%, rgba(2, 27, 27, 0.52) 67%, rgba(36, 22, 22, 0.89)), url("../images/tg-persons-back.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  transform: skewY(-7deg); }
+  .persons > * {
+    transform: skewY(7deg); }
