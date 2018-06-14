@@ -172,18 +172,56 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     margin-bottom: 2.5rem; }
+  .about-info__posters {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center; }
+    .about-info__posters:hover .about-info__poster:not(:hover) {
+      transform: scale(0.97); }
+  .about-info__poster {
+    width: 75%;
+    max-width: 320px;
+    min-width: 260px;
+    height: auto;
+    box-shadow: 0 0.3rem 1.2rem white;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+    outline-offset: 2rem; }
+    .about-info__poster:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 0.3rem 2rem white;
+      z-index: 5;
+      outline: 0.1rem solid #666666; }
+    .about-info__poster--img1 {
+      top: 6rem;
+      right: 0; }
+    .about-info__poster--img2 {
+      top: 0;
+      left: 0;
+      z-index: 3; }
+    .about-info__poster--img3 {
+      top: 13rem;
+      left: 10%;
+      z-index: 4; }
 
 .helper-center {
   text-align: center; }
 
 .row {
-  max-width: 128rem;
+  max-width: 1440px;
   background-color: inherit;
   margin: 0 auto;
   font-size: 1.6rem;
   color: #fff;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 .xs6 {
-  flex-basis: 48%; }
+  flex-basis: 48%;
+  min-width: 30%; }
+  @media screen and (max-width: 670px) {
+    .xs6 {
+      flex-basis: 100%; } }
