@@ -20,10 +20,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Roboto, Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* font-size: 1.6rem; */
   padding: 3rem;
   background-color: black;
   box-sizing: border-box; }
+  @media screen and (max-width: 480px) {
+    body {
+      padding: 1.5rem; } }
 
 @keyframes moveInLeft {
   0% {
@@ -107,9 +109,12 @@ body {
   /* Вырезаем весь фон блока */
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
   .header__logo-box {
-    /* position: absolute; */
     padding-top: 1.8rem;
     padding-left: 1.6rem; }
+    @media screen and (max-width: 480px) {
+      .header__logo-box {
+        padding-left: 0;
+        margin-left: -4px; } }
   .header__logo {
     cursor: pointer; }
   .header__title {
@@ -143,16 +148,14 @@ body {
     text-align: center;
     animation: moveInRight 1.4s ease-in; }
 
-.content {
-  background-color: inherit;
-  margin: 0 auto;
-  font-size: 1.6rem;
-  color: #fff; }
-
 .about-info {
   background-color: #0a0a0a;
   margin-top: -10vh;
+  margin-bottom: 10vh;
   padding-top: 16vh; }
+  @media screen and (max-width: 696px) {
+    .about-info {
+      margin-bottom: 35vh; } }
   .about-info__title {
     font-size: 3rem;
     font-weight: 500;
@@ -195,16 +198,31 @@ body {
       z-index: 5;
       outline: 0.1rem solid #666666; }
     .about-info__poster--img1 {
-      top: 6rem;
-      right: 0; }
-    .about-info__poster--img2 {
       top: 0;
       left: 0;
       z-index: 3; }
+    .about-info__poster--img2 {
+      top: 2rem;
+      right: 0; }
     .about-info__poster--img3 {
-      top: 13rem;
-      left: 10%;
+      top: 12rem;
+      left: 25%;
       z-index: 4; }
+
+@media screen and (max-width: 480px) {
+  .about-info__poster {
+    max-width: 220px; }
+    .about-info__poster--img1 {
+      z-index: 4; }
+    .about-info__poster--img2 {
+      z-index: 3;
+      top: 0;
+      left: 14%; }
+    .about-info__poster--img3 {
+      top: 0;
+      left: unset;
+      right: 0;
+      z-index: 2; } }
 
 .helper-center {
   text-align: center; }
@@ -220,21 +238,31 @@ body {
   flex-wrap: wrap; }
 
 .xs6 {
-  flex-basis: 48%;
-  min-width: 30%; }
-  @media screen and (max-width: 670px) {
+  flex-basis: 48%; }
+  @media screen and (max-width: 696px) {
     .xs6 {
       flex-basis: 100%; } }
+
+.xs3 {
+  flex-basis: calc(100% / 4 - 30px); }
+  @media screen and (max-width: 780px) {
+    .xs3 {
+      flex-basis: 48%; } }
+  @media screen and (max-width: 575px) {
+    .xs3 {
+      flex-basis: 90%; } }
 
 .card {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   border-radius: 3px;
   box-shadow: 0 0.3rem 0.9rem black;
   color: black;
   transition: all .2s; }
-  .card:hover {
+  .card:hover, .card:active {
     transform: translateY(-1.5rem) scale(1.03); }
   .card__img {
     max-width: 320px;
@@ -263,11 +291,14 @@ body {
 .persons {
   height: 900px;
   margin-top: 10rem;
-  padding-top: 20rem;
+  padding-top: 4rem;
   background-image: linear-gradient(rgba(8, 7, 7, 0.5) 30%, rgba(2, 27, 27, 0.52) 67%, rgba(36, 22, 22, 0.89)), url("../images/tg-persons-back.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
   transform: skewY(-7deg); }
+  @media screen and (max-width: 696px) {
+    .persons {
+      padding-top: 26rem; } }
   .persons > * {
     transform: skewY(7deg); }
