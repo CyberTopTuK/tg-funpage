@@ -1,13 +1,22 @@
 .row {
-  max-width: 128rem;
+  max-width: 1440px;
   background-color: inherit;
   margin: 0 auto;
   font-size: 1.6rem;
   color: $whiteColor;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+
+  // @media screen and max-width() {
+  //   flex-direction: column;
+  // }
 }
 
 .xs6 {
   flex-basis: 48%;
+  min-width: 30%;
+  @media screen and (max-width: 670px) {
+    flex-basis: 100%;
+}
 }
