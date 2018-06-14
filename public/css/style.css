@@ -152,6 +152,7 @@ body {
 .about-info {
   background-color: #0a0a0a;
   margin-top: -10vh;
+  margin-bottom: 35vh;
   padding-top: 16vh; }
   .about-info__title {
     font-size: 3rem;
@@ -195,15 +196,15 @@ body {
       z-index: 5;
       outline: 0.1rem solid #666666; }
     .about-info__poster--img1 {
-      top: 6rem;
-      right: 0; }
-    .about-info__poster--img2 {
       top: 0;
       left: 0;
       z-index: 3; }
+    .about-info__poster--img2 {
+      top: 2rem;
+      right: -2rem; }
     .about-info__poster--img3 {
-      top: 13rem;
-      left: 10%;
+      top: 12rem;
+      left: 25%;
       z-index: 4; }
 
 .helper-center {

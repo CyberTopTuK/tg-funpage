@@ -1,6 +1,7 @@
 .about-info {
   background-color: darken($whiteColor, 96%);
   margin-top: -10vh;
+  margin-bottom: 35vh;
   padding-top: 16vh;
 
   &__title {
@@ -61,19 +62,19 @@
     }
 
     &--img1 {
-      top: 6rem;
-      right: 0;
-    }
-
-    &--img2 {
       top: 0;
       left: 0;
       z-index: 3;
     }
 
+    &--img2 {
+      top: 2rem;
+      right: -2rem;
+    }
+
     &--img3 {
-      top: 13rem;
-      left: 10%;
+      top: 12rem;
+      left: 25%;
       z-index: 4;
     }
   }
