@@ -1,0 +1,32 @@
+.about-info {
+  background-color: darken($whiteColor, 96%);
+  margin-top: -10vh;
+  padding-top: 16vh;
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    display: inline-block;
+    background-image: linear-gradient(to right, $whiteColor, #b8b1b1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s;
+
+    &:hover {
+      background-image: linear-gradient(to left, $whiteColor, #b8b1b1);
+    }
+  }
+
+  &__name {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin: 0 auto 1rem;
+  }
+
+  &__text {
+    transition: all .2s;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}

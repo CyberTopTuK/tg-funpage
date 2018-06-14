@@ -1,0 +1,21 @@
+{
+  "name": "tg-landing",
+  "version": "1.0.0",
+  "description": "Tokyo Ghoul fun page",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build && gulp optiimages",
+    "dev": "gulp watch"
+  },
+  "author": "cybergamer1992@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1"
+  }
+}

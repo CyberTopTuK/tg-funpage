@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* т.к. разные приколы могут нести свой box-sizing, лучше так делать */
+}
+
+html {
+  /**
+    def value for font to be easier to calc in rem
+    // font-size: 10px;
+    our (px) 10  / 16(as default browser size) = 0.625
+    means how rem should be
+  */
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Roboto, Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-size: 1.6rem; */
+  padding: 3rem;
+  background-color: $blackColor;
+  box-sizing: border-box;
+}

@@ -1,0 +1,63 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+    rgba(8, 27, 27, 0.09) 30%, 
+    rgba(2, 27, 27, 0.12) 67%, 
+    rgba(192, 27, 27, 0.089)), 
+    url('../images/tg_back.png');
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  /* Вырезаем весь фон блока */
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+  &__logo-box {
+    /* position: absolute; */
+    padding-top: 1.8rem;
+    padding-left: 1.6rem;
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__title {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.title {
+  color: $whiteColor;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &__primary {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    background: linear-gradient(
+      rgba(245, 68, 68, 0.726) 33%, 
+      rgba(85, 8, 8, 0.61) 56%, 
+      rgba(85, 8, 8, 0.7));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: red;
+    animation: moveInLeft 1.4s ease-in;
+  }
+
+  &__secondary {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    text-align: center;
+    animation: moveInRight 1.4s ease-in;
+  }
+}
