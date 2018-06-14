@@ -263,7 +263,7 @@ body {
 .persons {
   height: 900px;
   margin-top: 10rem;
-  padding-top: 20rem;
+  padding-top: 2rem;
   background-image: linear-gradient(rgba(8, 7, 7, 0.5) 30%, rgba(2, 27, 27, 0.52) 67%, rgba(36, 22, 22, 0.89)), url("../images/tg-persons-back.jpg");
   background-size: cover;
   background-position: top;
