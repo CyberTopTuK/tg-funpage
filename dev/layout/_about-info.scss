@@ -69,13 +69,36 @@
 
     &--img2 {
       top: 2rem;
-      right: -2rem;
+      right: 0;
     }
 
     &--img3 {
       top: 12rem;
       left: 25%;
       z-index: 4;
+    }
+  }
+}
+
+@media screen and (max-width: $breakXs) {
+  .about-info__poster {
+    max-width: 220px;
+
+    &--img1 {
+      z-index: 4;
+    }
+
+    &--img2 {
+      z-index: 3;
+      top: 0;
+      left: 14%;
+    }
+
+    &--img3 {
+      top: 0;
+      left: unset;
+      right: 0;
+      z-index: 2;
     }
   }
 }

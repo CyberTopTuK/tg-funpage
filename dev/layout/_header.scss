@@ -12,9 +12,13 @@
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 
   &__logo-box {
-    /* position: absolute; */
     padding-top: 1.8rem;
     padding-left: 1.6rem;
+
+    @media screen and (max-width: $breakXs) {
+      padding-left: 0;
+      margin-left: -4px;
+    }
   }
 
   &__logo {

@@ -15,8 +15,17 @@
 
 .xs6 {
   flex-basis: 48%;
-  min-width: 30%;
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: $breakSm) {
     flex-basis: 100%;
+  }
+}
+
+.xs3 {
+  flex-basis: calc(100% / 4 - 30px);
+  @media screen and (max-width: 780px) {
+    flex-basis: 48%;
+  }
+  @media screen and (max-width: 575px) {
+    flex-basis: 90%;
   }
 }
