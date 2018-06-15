@@ -1,0 +1,44 @@
+.footer {
+  margin-top: 10rem;
+  padding: 8rem 0;
+
+  &__nav {
+    margin-bottom: 2rem;
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2.5rem;
+  }
+
+  &__sources {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 4px 0;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    background-color: transparent;
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: #BDBDBD;
+      display: inline-block;
+      transition: all .2s;
+    }
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: #FF5252;
+      box-shadow: 0 .6rem 2rem #2e2c2cb2;
+      transform: rotateY(5deg) scale(1.05);
+    }
+  }
+}

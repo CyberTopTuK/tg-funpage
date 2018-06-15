@@ -1,7 +1,6 @@
 .persons {
-  height: 900px;
-  margin-top: 10rem;
   padding-top: 4rem;
+  padding-bottom: 4rem;
   background-image: linear-gradient(
     rgba(8, 7, 7, 0.5) 30%, 
     rgba(2, 27, 27, 0.52) 67%, 
@@ -10,16 +9,15 @@
   background-size: cover;
   background-position: top;
   position: relative;
-  // clip-path: polygon(0 15vh, 100% 0, 100% 86%, 0 100%);
   // наклон всего блока на -7 градусов
-  transform: skewY(-7deg);
+  // transform: skewY(-5deg);
 
   @media screen and (max-width: $breakSm) {
     padding-top: 26rem;
   }
 
   // Выравниваем весь контент на противоложное значение
-  & > * {
-    transform: skewY(7deg);
-  }
+  // & > * {
+  //   transform: skewY(5deg);
+  // }
 }
