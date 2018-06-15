@@ -24,6 +24,7 @@ body {
   padding: 3rem;
   background-color: $blackColor;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 
   @media screen and (max-width: $breakXs) {
     padding: 1.5rem;

@@ -195,5 +195,34 @@
       </div>
     </div>
   </footer>
+  <script>
+    /*
+      old browsers supported code
+      except scroll-behavior
+    */
+    window.onload = function() {
+      const brandLogo = document.querySelectorAll('.brand-logo')
+      const brandClick = function () {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        })
+      }
+
+      const btnHeader = document.querySelector('.btn--header')
+      const discoverClick = function () {
+        event.preventDefault()
+        document.querySelector('.about-info').scrollIntoView({ 
+          behavior: 'smooth' 
+        })
+      }
+
+      brandLogo.forEach(function (logo) {
+        logo.addEventListener('click', brandClick)
+      })
+      btnHeader.addEventListener('click', discoverClick)
+    }
+  </script>
 </body>
 </html>
