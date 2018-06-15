@@ -1,11 +1,10 @@
 .about-info {
-  background-color: darken($whiteColor, 96%);
   margin-top: -10vh;
   margin-bottom: 10vh;
   padding-top: 16vh;
 
   @media screen and (max-width: $breakSm) {
-    margin-bottom: 35vh;
+    margin-bottom: 45vh;
   }
 
   &__title {
@@ -37,7 +36,6 @@
 
   &__posters {
     width: 100%;
-    // height: 60vh;
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -86,6 +84,7 @@
 
 @media screen and (max-width: $breakXs) {
   .about-info__poster {
+    min-width: 170px;
     max-width: 220px;
 
     &--img1 {

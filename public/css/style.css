@@ -27,6 +27,9 @@ body {
     body {
       padding: 1.5rem; } }
 
+main {
+  background-color: #0a0a0a; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -115,8 +118,6 @@ body {
       .header__logo-box {
         padding-left: 0;
         margin-left: -4px; } }
-  .header__logo {
-    cursor: pointer; }
   .header__title {
     position: absolute;
     top: 46%;
@@ -149,13 +150,12 @@ body {
     animation: moveInRight 1.4s ease-in; }
 
 .about-info {
-  background-color: #0a0a0a;
   margin-top: -10vh;
   margin-bottom: 10vh;
   padding-top: 16vh; }
   @media screen and (max-width: 696px) {
     .about-info {
-      margin-bottom: 35vh; } }
+      margin-bottom: 45vh; } }
   .about-info__title {
     font-size: 3rem;
     font-weight: 500;
@@ -211,6 +211,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .about-info__poster {
+    min-width: 170px;
     max-width: 220px; }
     .about-info__poster--img1 {
       z-index: 4; }
@@ -226,6 +227,9 @@ body {
 
 .helper-center {
   text-align: center; }
+
+.mb-1 {
+  margin-bottom: 1.9rem !important; }
 
 .row {
   max-width: 1440px;
@@ -288,17 +292,49 @@ body {
         vertical-align: middle;
         padding: 8px; }
 
+.brand-logo {
+  cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .brand-logo {
+      max-width: 290px;
+      margin-left: -1rem; } }
+
 .persons {
-  height: 900px;
-  margin-top: 10rem;
   padding-top: 4rem;
+  padding-bottom: 4rem;
   background-image: linear-gradient(rgba(8, 7, 7, 0.5) 30%, rgba(2, 27, 27, 0.52) 67%, rgba(36, 22, 22, 0.89)), url("../images/tg-persons-back.jpg");
   background-size: cover;
   background-position: top;
-  position: relative;
-  transform: skewY(-7deg); }
+  position: relative; }
   @media screen and (max-width: 696px) {
     .persons {
       padding-top: 26rem; } }
-  .persons > * {
-    transform: skewY(7deg); }
+
+.footer {
+  margin-top: 10rem;
+  padding: 8rem 0; }
+  .footer__nav {
+    margin-bottom: 2rem;
+    border-top: 1px solid #f7f7f7;
+    padding-top: 2.5rem; }
+  .footer__sources {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .footer__item {
+    padding: 4px 0; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link {
+    background-color: transparent; }
+    .footer__link:link, .footer__link:visited {
+      text-decoration: none;
+      color: #BDBDBD;
+      display: inline-block;
+      transition: all .2s; }
+    .footer__link:hover, .footer__link:active {
+      background-color: transparent;
+      color: #FF5252;
+      box-shadow: 0 .6rem 2rem #2e2c2cb2;
+      transform: rotateY(5deg) scale(1.05); }

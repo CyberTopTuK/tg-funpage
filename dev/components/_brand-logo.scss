@@ -1,0 +1,7 @@
+.brand-logo {
+  cursor: pointer;
+  @media screen and (max-width: $breakXs) {
+    max-width: 290px;
+    margin-left: -1rem;
+  }
+}
